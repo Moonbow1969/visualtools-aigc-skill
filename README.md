@@ -16,6 +16,8 @@ export VISUALTOOLS_BASE_URL=https://visualtools.frederickpi.com
 python scripts/visualtools.py discover
 ```
 
+Python客户端只依赖requests和Pillow；视频帧提取、拼接与解码验证还需系统安装FFmpeg/ffprobe，curl示例使用Bash。模型推理在服务端执行，本机无需模型权重或GPU。
+
 先选模型，再读对应工艺。基础图片示例：
 
 ```bash
